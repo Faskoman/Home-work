@@ -1,0 +1,294 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightcyan;
+    margin: 0px 0px 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 56px;
+    background-color: rgba(15, 132, 205, 1);
+    color: goldenrod;
+    font-size: 100%; 
+    text-shadow: 0px 0px 1px black;
+    text-align: center;
+    padding: 20px 0px 20px;
+    box-shadow: 0px 0px 2px 2px rgb(0 0 0 / 0.1);
+    border-radius: 5px;
+    justify-content: center;
+    width: 100%;    
+    z-index: 1;
+    transition: top 0.2s ease-in-out;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 2px;
+}
+
+header.nav-up {
+    top: -100px;
+}
+
+header.nav-up {
+    display: none;
+  }
+
+article {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+article.first {
+    padding-top: 100px;
+}
+
+.centered {
+    margin-left: 15%;
+    align-items: center;
+    align-content: center;
+}
+
+.centered-list {
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 0;
+    
+  }
+  
+h2 {
+    font-size: 150%;
+    text-align: center;
+    margin: 25px;
+}
+
+.purple {
+    color: purple;
+    text-decoration: underline;
+}
+
+.bold {
+    font-size: 125%;
+    font-weight: 600;
+}
+
+.bolder {
+    font-size: 175%;
+    font-weight: 600;
+}
+
+.card {
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 0 0 6px 2px rgb(0 0 0 / 0.2);
+    padding: 2px 5% 5px;
+    border-radius: 2px;
+}
+
+.card.smaller {
+    max-width: 60ch;
+}
+
+p.smaller {
+    font-size: 0.8rem;
+}
+
+a {
+    color: maroon;
+    text-decoration-line: none;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.2); 
+}
+
+.blend {
+    mix-blend-mode: multiply;
+}
+
+.smallerimg {
+    width: 75%;
+    height: auto;
+}
+
+.smallestimg {
+    width: 40%;
+    height: auto;
+}
+
+a:hover {
+    font-size: 125%;
+    color: yellowgreen;
+  }
+  
+  a:active {
+    color: #ff0000;
+  }
+  
+button {
+    padding: 4px 8px;
+    border: 2px solid rgba(156, 148, 0, 0.5);
+    background-color: rgb(237, 237, 237);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-weight: 800;
+    width: 10em;
+}
+
+.l2r {
+    display: inline-flex;
+    list-style-type: none;
+  }
+
+.l2r li {
+    padding-right: 10px;
+  }
+
+button:hover {
+    background-color: rgb(237, 237, 237, 0.2);
+    transition: all 0.3s;
+}
+
+button:active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.disclaimer {
+    margin-top: 30px;
+    color: red; 
+    font-size: 33%;
+}
+
+footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 125%; 
+    background-color: rgb(199, 143, 65, 0.85);
+    padding: 10px 0px 10px;
+    padding-inline: 25px;
+    box-shadow: 0px -1px 1px 1px rgb(0 0 0 / 0.15);
+    text-align-last: justify;    
+}
+
+.accordion {
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background: #2c7b67;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.accordion__label,
+.accordion__content {
+    padding: 14px 20px;
+}
+
+.accordion__label {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.5s;
+}
+
+.accordion__label:hover {
+    background: rgba(0, 0, 0, 0.25);
+    color: rgba(248, 255, 37, 1);
+}
+
+.accordion__label::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    rotate: 180deg;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    background-image: url('https://pic.onlinewebfonts.com/svg/img_380381.png');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+
+.accordion__content {
+    background: #ffffff;
+    padding: 0;
+    padding-right: 10%;
+    padding-left: 5%;
+    line-height: 2;
+    font-size: 0.85em;
+    transition: max-height 0.38s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordion__input {
+    display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+    display: block;
+    max-height: 300px;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.accul {
+    padding-left: 10%;
+}
+
+/* sign up sheet */
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    .form-group input[type="submit"] {
+      background-color: #4CAF50;
+      width: 6em;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        padding-right: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
